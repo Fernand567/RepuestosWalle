@@ -1,0 +1,108 @@
+
+header{
+    background-image: linear-gradient(0, #7444c4 0, #5235a8 25%, #2e268a 50%, #00176c 75%, #000851 100%);
+    padding: 20px 10px;
+}
+
+body{
+    background-color:#2F2F2F;
+}
+
+.centro{
+    text-align: center;
+}
+.texto{
+    color: #ffffff;
+    font-size: 30px;
+    margin: 10px 50px;
+    float: left;
+    width: 50%;
+}
+.div-a{
+	background-color:#8007F9;
+	font:bold 90% monospace;
+	width: 500px;
+	height:350px;
+	color:white;
+	text-align:center;
+	margin-left:200px;
+}
+aside{
+   margin-right: 150px;
+   margin-left: 300px;
+   margin-bottom:30px;
+   font-size:60px;
+   padding: 20px;
+   width: auto;
+   height: auto;
+   border: 1px;
+   float:left;
+   background: #0f2f63;
+   align-items: center;
+   color: white;
+}
+.card {
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Para que los productos se muestren en línea */
+}
+
+.globo{
+   margin-left: 625px;
+   font-size:60px;
+   padding: 20px;
+   width: 700px;
+   height: 300px;
+   border: 1px;
+   background: #0f2f63;
+   align-items: center;
+   color: white;
+}
+
+.imagen{
+  margin:50px 10px;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+nav a {
+    font:bold 14px verdana;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: underline;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 2px 30px;
+}
+
+nav{
+    overflow: hidden;
+    padding: 10px 5px;
+    background-image: linear-gradient(0, #9e8385 0, #8b797b 16.67%, #776e6f 33.33%, #616161 50%, #4c5552 66.67%, #3a4943 83.33%, #2b3f36 100%);
+} 
+  
+footer {
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(0, #9e8385 0, #8b797b 16.67%, #776e6f 33.33%, #616161 50%, #4c5552 66.67%, #3a4943 83.33%, #2b3f36 100%);
+    padding: 5px 10px;
+    text-align: center;
+    clear:both;
+}
+  
+footer li{
+    list-style: none;
+    font:bold 14px verdana;
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+}
+li a{
+  color: #fff;
+}

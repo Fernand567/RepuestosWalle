@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga de Imágenes</title>
+</head>
+<body>
+    <h2>Formulario de Carga de Imágenes</h2>
+    <form action="http://localhost:3000/subirImagen" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="nombre">Nombre del repuesto:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+        </div>
+        <div>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" step="0.01" required>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+        </div>
+        <div>
+            <label for="imagen">Seleccione una imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required>
+        </div>
+        <div>
+            <button type="submit">Subir Imagen</button>
+        </div>
+    </form>
+</body>
+</html>

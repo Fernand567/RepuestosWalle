@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repuestos Online</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS y dependencias (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="centro">
+            <img src="/imagenes/logo2.png" alt="Logo Repuestos Online" width="200" height="160">
+            <img src="/imagenes/logo3.png" alt="Logo Repuestos Online" width="800" height="120">
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <main style="background-color: #2F2F2F; color: white;">
+        <div class="container">
+            <h2>Formulario de Compra</h2>
+            <form action="/procesar_compra" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="metodo_pago">Método de Pago:</label>
+                    <select class="form-control" id="metodo_pago" name="metodo_pago" required>
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </div>
+
+                <!-- Servicios asociados -->
+                <div class="form-group">
+                    <label>Servicios asociados:</label><br>
+                    <input type="checkbox" id="revision_anual" name="servicios[]" value="revision_anual">
+                    <label for="revision_anual">Revisión Anual</label><br>
+                    
+                    <input type="checkbox" id="mantenimiento_preventivo" name="servicios[]" value="mantenimiento_preventivo">
+                    <label for="mantenimiento_preventivo">Mantenimiento Preventivo</label><br>
+                    
+                    <!-- Agrega más servicios según necesites -->
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1" required>
+                </div>
+                
+                <!-- Otros campos del formulario de compra -->
+
+                <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+            </form>
+        </div>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Alexis Sánchez</p>
+        <p>Contacto: <a href="mailto:info@repuestosonline.com">info@repuestosonline.com</a></p>
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://twitter.com/?lang=es">Twitter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
